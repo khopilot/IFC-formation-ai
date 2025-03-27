@@ -240,7 +240,7 @@ export default function Home() {
                     Essayer Angkor Intelligence GPT
                   </a>
                   <Link 
-                    href="/contact" 
+                    href="/about" 
                     className="px-8 py-3 text-base font-medium rounded-md text-white border-2 border-white/70 hover:bg-white/10 transition-colors duration-300 text-center w-full sm:w-auto hover:scale-105 transform transition-transform duration-300"
                   >
                     Découvrir le Programme
