@@ -1,0 +1,122 @@
+<svg width="1440" height="800" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="800" fill="#F5F7FF"/>
+  <g opacity="0.2">
+    <!-- Grille de points pour simuler les connexions neuronales -->
+    <circle cx="100" cy="100" r="3" fill="#0055A4"/>
+    <circle cx="200" cy="150" r="3" fill="#0055A4"/>
+    <circle cx="300" cy="100" r="3" fill="#0055A4"/>
+    <circle cx="400" cy="200" r="3" fill="#0055A4"/>
+    <circle cx="500" cy="150" r="3" fill="#0055A4"/>
+    <circle cx="600" cy="100" r="3" fill="#0055A4"/>
+    <circle cx="700" cy="200" r="3" fill="#0055A4"/>
+    <circle cx="800" cy="150" r="3" fill="#0055A4"/>
+    <circle cx="900" cy="100" r="3" fill="#0055A4"/>
+    <circle cx="1000" cy="200" r="3" fill="#0055A4"/>
+    <circle cx="1100" cy="150" r="3" fill="#0055A4"/>
+    <circle cx="1200" cy="100" r="3" fill="#0055A4"/>
+    <circle cx="1300" cy="200" r="3" fill="#0055A4"/>
+    <circle cx="1400" cy="150" r="3" fill="#0055A4"/>
+    
+    <circle cx="100" cy="300" r="3" fill="#0055A4"/>
+    <circle cx="200" cy="350" r="3" fill="#0055A4"/>
+    <circle cx="300" cy="300" r="3" fill="#0055A4"/>
+    <circle cx="400" cy="400" r="3" fill="#0055A4"/>
+    <circle cx="500" cy="350" r="3" fill="#0055A4"/>
+    <circle cx="600" cy="300" r="3" fill="#0055A4"/>
+    <circle cx="700" cy="400" r="3" fill="#0055A4"/>
+    <circle cx="800" cy="350" r="3" fill="#0055A4"/>
+    <circle cx="900" cy="300" r="3" fill="#0055A4"/>
+    <circle cx="1000" cy="400" r="3" fill="#0055A4"/>
+    <circle cx="1100" cy="350" r="3" fill="#0055A4"/>
+    <circle cx="1200" cy="300" r="3" fill="#0055A4"/>
+    <circle cx="1300" cy="400" r="3" fill="#0055A4"/>
+    <circle cx="1400" cy="350" r="3" fill="#0055A4"/>
+    
+    <circle cx="100" cy="500" r="3" fill="#0055A4"/>
+    <circle cx="200" cy="550" r="3" fill="#0055A4"/>
+    <circle cx="300" cy="500" r="3" fill="#0055A4"/>
+    <circle cx="400" cy="600" r="3" fill="#0055A4"/>
+    <circle cx="500" cy="550" r="3" fill="#0055A4"/>
+    <circle cx="600" cy="500" r="3" fill="#0055A4"/>
+    <circle cx="700" cy="600" r="3" fill="#0055A4"/>
+    <circle cx="800" cy="550" r="3" fill="#0055A4"/>
+    <circle cx="900" cy="500" r="3" fill="#0055A4"/>
+    <circle cx="1000" cy="600" r="3" fill="#0055A4"/>
+    <circle cx="1100" cy="550" r="3" fill="#0055A4"/>
+    <circle cx="1200" cy="500" r="3" fill="#0055A4"/>
+    <circle cx="1300" cy="600" r="3" fill="#0055A4"/>
+    <circle cx="1400" cy="550" r="3" fill="#0055A4"/>
+    
+    <circle cx="100" cy="700" r="3" fill="#0055A4"/>
+    <circle cx="200" cy="750" r="3" fill="#0055A4"/>
+    <circle cx="300" cy="700" r="3" fill="#0055A4"/>
+    <circle cx="400" cy="780" r="3" fill="#0055A4"/>
+    <circle cx="500" cy="750" r="3" fill="#0055A4"/>
+    <circle cx="600" cy="700" r="3" fill="#0055A4"/>
+    <circle cx="700" cy="780" r="3" fill="#0055A4"/>
+    <circle cx="800" cy="750" r="3" fill="#0055A4"/>
+    <circle cx="900" cy="700" r="3" fill="#0055A4"/>
+    <circle cx="1000" cy="780" r="3" fill="#0055A4"/>
+    <circle cx="1100" cy="750" r="3" fill="#0055A4"/>
+    <circle cx="1200" cy="700" r="3" fill="#0055A4"/>
+    <circle cx="1300" cy="780" r="3" fill="#0055A4"/>
+    <circle cx="1400" cy="750" r="3" fill="#0055A4"/>
+    
+    <!-- Lignes de connexion -->
+    <line x1="100" y1="100" x2="200" y2="150" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="200" y1="150" x2="300" y2="100" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="300" y1="100" x2="400" y2="200" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="400" y1="200" x2="500" y2="150" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="500" y1="150" x2="600" y2="100" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="600" y1="100" x2="700" y2="200" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="700" y1="200" x2="800" y2="150" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="800" y1="150" x2="900" y2="100" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="900" y1="100" x2="1000" y2="200" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="1000" y1="200" x2="1100" y2="150" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="1100" y1="150" x2="1200" y2="100" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="1200" y1="100" x2="1300" y2="200" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="1300" y1="200" x2="1400" y2="150" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    
+    <line x1="100" y1="300" x2="200" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="200" y1="350" x2="300" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="300" y1="300" x2="400" y2="400" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="400" y1="400" x2="500" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="500" y1="350" x2="600" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="600" y1="300" x2="700" y2="400" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="700" y1="400" x2="800" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="800" y1="350" x2="900" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="900" y1="300" x2="1000" y2="400" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="1000" y1="400" x2="1100" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="1100" y1="350" x2="1200" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="1200" y1="300" x2="1300" y2="400" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="1300" y1="400" x2="1400" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.3"/>
+    
+    <!-- Connexions verticales -->
+    <line x1="100" y1="100" x2="100" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="200" y1="150" x2="200" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="300" y1="100" x2="300" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="400" y1="200" x2="400" y2="400" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="500" y1="150" x2="500" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="600" y1="100" x2="600" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="700" y1="200" x2="700" y2="400" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="800" y1="150" x2="800" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="900" y1="100" x2="900" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="1000" y1="200" x2="1000" y2="400" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="1100" y1="150" x2="1100" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="1200" y1="100" x2="1200" y2="300" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="1300" y1="200" x2="1300" y2="400" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="1400" y1="150" x2="1400" y2="350" stroke="#0055A4" stroke-width="1" stroke-opacity="0.2"/>
+  </g>
+  
+  <!-- Gradient Overlay -->
+  <rect width="1440" height="800" fill="url(#gradient)" opacity="0.1"/>
+  
+  <!-- Définition des gradients -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1440" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0055A4"/>
+      <stop offset="0.5" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EF4135"/>
+    </linearGradient>
+  </defs>
+</svg> 

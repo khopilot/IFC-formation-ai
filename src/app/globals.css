@@ -1,8 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #FFFFFF;
   --foreground: #171717;
+  
+  --fr-blue: #0055A4;
+  --fr-white: #FFFFFF;
+  --fr-red: #EF4135;
+  
+  --ai-primary: #0055A4;
+  --ai-secondary: #3A86FF;
+  --ai-accent: #EF4135;
+  --ai-light: #F5F7FF;
+  --ai-dark: #1E293B;
+  --ai-gray: #64748B;
+  
+  --gradient-start: #0055A4;
+  --gradient-mid: #3A86FF;
+  --gradient-end: #00A6FB;
 }
 
 @theme inline {
@@ -12,15 +27,252 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Système de détection automatique du mode sombre désactivé
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0A0A0A;
+    --foreground: #EDEDED;
+    --ai-light: #1E293B;
+    --ai-dark: #F5F7FF;
   }
 }
+*/
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+}
+
+/* Styles globaux pour les animations */
+.gradient-text {
+  background: linear-gradient(135deg, var(--fr-blue), var(--fr-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.card-ai {
+  background: var(--ai-light);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px 0 rgba(0, 85, 164, 0.15);
+  transition: all 0.3s ease;
+}
+
+.card-ai:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 85, 164, 0.2);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--fr-blue), var(--ai-secondary));
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px 0 rgba(0, 85, 164, 0.15);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--ai-secondary), var(--fr-blue));
+  box-shadow: 0 10px 25px rgba(0, 85, 164, 0.2);
+}
+
+.ai-gradient-bg {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
+  background-size: 200% 200%;
+  animation: gradient-xy 15s ease infinite;
+}
+
+/* Classes pour les boutons du menu */
+.bg-gradient-ai {
+  background-image: linear-gradient(135deg, var(--fr-blue), var(--ai-secondary));
+}
+
+.bg-gradient-fr {
+  background-image: linear-gradient(to right, var(--fr-blue), var(--fr-white), var(--fr-red));
+}
+
+.bg-size-200 {
+  background-size: 200% 100%;
+}
+
+.bg-pos-0 {
+  background-position: 0% 0%;
+}
+
+.bg-pos-100 {
+  background-position: 100% 0%;
+}
+
+/* Ombres spéciales */
+.shadow-ai {
+  box-shadow: 0 4px 14px 0 rgba(0, 85, 164, 0.15);
+}
+
+.shadow-ai-hover {
+  box-shadow: 0 10px 25px rgba(0, 85, 164, 0.25);
+}
+
+.shadow-modal {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Amélioration de la visibilité des textes en dégradé */
+.gradient-text-enhanced {
+  background-image: linear-gradient(135deg, var(--fr-blue), var(--ai-secondary), var(--fr-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  padding: 0.1em 0;
+}
+
+/* Bouton avec l'effet de dégradé du drapeau français */
+.btn-fr {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.btn-fr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(to right, var(--fr-blue), var(--fr-white), var(--fr-red));
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.btn-fr:hover::before {
+  transform: translateX(33.33%);
+}
+
+/* Variantes de cartes */
+.card-fr {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card-fr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.25rem;
+  background: linear-gradient(to right, var(--fr-blue), var(--fr-white), var(--fr-red));
+  z-index: 2;
+  transition: height 0.3s ease;
+}
+
+.card-fr:hover::before {
+  height: 0.5rem;
+}
+
+/* Amélioration du padding pour tout le site */
+.section {
+  padding: 4rem 0;
+}
+
+.section-hero {
+  padding: 8rem 0 4rem;
+  background-image: url('/hero-bg.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .section-hero {
+    padding: 7rem 0 3rem;
+  }
+}
+
+/* Animation de texte pour les titres */
+.headline-animation {
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation de clignotement pour les éléments décoratifs */
+.pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+/* Animation de rotation lente */
+.rotate-slow {
+  animation: rotate-slow 20s linear infinite;
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Délai pour les animations séquentielles */
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+@keyframes gradient-xy {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
 }
