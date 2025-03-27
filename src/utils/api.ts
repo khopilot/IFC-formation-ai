@@ -3,7 +3,7 @@
  */
 
 // Function to handle form submissions
-export async function submitForm(formData: Record<string, string>): Promise<{ success: boolean; message: string }> {
+export async function submitForm(): Promise<{ success: boolean; message: string }> {
   // In a real application, this would be an API call to a backend service
   // For this demo, we're simulating a successful response after a delay
   return new Promise((resolve) => {
@@ -16,8 +16,16 @@ export async function submitForm(formData: Record<string, string>): Promise<{ su
   });
 }
 
+// Define types for quiz questions
+export type QuizQuestion = {
+  id: number;
+  question: string;
+  options: string[];
+  correctAnswer: number;
+};
+
 // Function to fetch quiz questions
-export async function fetchQuizQuestions(): Promise<any[]> {
+export async function fetchQuizQuestions(): Promise<QuizQuestion[]> {
   // In a real application, this would fetch from an API
   // For this demo, we're returning mock data
   return new Promise((resolve) => {
@@ -56,8 +64,15 @@ export async function fetchQuizQuestions(): Promise<any[]> {
   });
 }
 
+// Define types for department use cases
+export type DepartmentUseCase = {
+  department: string;
+  useCases: string;
+  examples: string;
+};
+
 // Function to fetch department use cases
-export async function fetchDepartmentUseCases(): Promise<any[]> {
+export async function fetchDepartmentUseCases(): Promise<DepartmentUseCase[]> {
   // Mock data for departments
   return new Promise((resolve) => {
     setTimeout(() => {

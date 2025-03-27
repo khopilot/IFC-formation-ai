@@ -1,13 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { fetchDepartmentUseCases } from '../../../utils/api';
-
-type DepartmentUseCase = {
-  department: string;
-  useCases: string;
-  examples: string;
-};
+import { fetchDepartmentUseCases, DepartmentUseCase } from '../../../utils/api';
 
 export default function DepartmentsPage() {
   const [useCases, setUseCases] = useState<DepartmentUseCase[]>([]);
