@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Formation IA - Institut Français du Cambodge
 
-## Getting Started
+![Formation IA](https://ibb.co/7KmvCQW)
 
-First, run the development server:
+## À propos du projet
+
+Ce site web est dédié à une formation intensive de deux jours sur l'intelligence artificielle (IA) à l'Institut Français du Cambodge. Développé avec Next.js et TypeScript, il présente de manière claire et interactive le programme complet, en intégrant des éléments culturels et pratiques adaptés au contexte local et aux besoins du staff.
+
+### Objectifs principaux
+
+- **Informer** sur le programme complet de la formation (contenu théorique et ateliers pratiques)
+- **Présenter** les cas d'utilisation de l'IA par département avec des exemples concrets
+- **Valoriser** les initiatives locales (ex. : outil de cartographie de la pauvreté de la PNUD, eKYC de Slash/Clik)
+- **Améliorer** l'expérience des participants avec des éléments interactifs et ludiques
+
+## Technologies utilisées
+
+- **Framework:** Next.js 14 (App Router)
+- **Langage:** TypeScript
+- **Styles:** Tailwind CSS
+- **Déploiement:** Vercel
+- **SEO:** Optimisation des balises meta et performance (SSG pour les pages statiques)
+- **Performance:** Lazy loading, optimisation des images (composant Next.js Image)
+- **Accessibilité:** HTML sémantique, attributs ARIA
+
+## Structure du site
+
+Le site est organisé en plusieurs sections :
+
+1. **Page d'Accueil** - Introduction à la formation avec appel à l'action
+2. **À Propos** - Contexte et objectifs de la formation
+3. **Programme / Agenda** - Détail des deux jours de formation
+4. **Cas d'Utilisation par Département** - Applications pratiques de l'IA pour chaque service
+5. **Suggestions d'Amélioration** - Propositions pour améliorer l'expérience de formation
+6. **Contact** - Formulaire pour questions et retours
+
+## Installation et démarrage
 
 ```bash
+# Cloner le dépôt
+git clone https://github.com/khopilot/IFC-formation-ai.git
+cd formation-ia
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure du projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/formation-ia
+├── /src
+│   ├── /app                # Structure principale de l'application
+│   │   ├── /(pages)        # Routes de l'application
+│   │   ├── /api            # API routes
+│   │   └── /components     # Composants principaux
+│   ├── /components         # Composants partagés
+│   ├── /hooks              # Hooks personnalisés
+│   ├── /styles             # Styles globaux
+│   ├── /types              # Types TypeScript
+│   └── /utils              # Fonctions utilitaires
+├── /public                 # Assets statiques
+├── next.config.ts          # Configuration Next.js
+├── tailwind.config.ts      # Configuration Tailwind
+└── tsconfig.json           # Configuration TypeScript
+```
 
-## Learn More
+## Fonctionnalités principales
 
-To learn more about Next.js, take a look at the following resources:
+- Design responsive adapté à tous les appareils
+- Thème clair/sombre automatique
+- Animation et transitions pour une expérience utilisateur optimale
+- Contenu interactif (tableaux, cartes, visualisations)
+- Support multilingue (français et anglais)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Déploiement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Le site est déployé automatiquement sur [Vercel](https://vercel.com) à chaque push sur la branche `main`.
 
-## Deploy on Vercel
+## Équipe
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Khopilot](https://github.com/khopilot) - Développeur principal
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licence
+
+Ce projet est sous licence [MIT](LICENSE).
